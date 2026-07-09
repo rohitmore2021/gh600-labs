@@ -8,7 +8,7 @@ jobs:
     outputs:
       version: ${{steps.build.outputs.version}}
     steps:
-      - id: build
+      - id: hello
         run: |
           echo "Hello GH-600"
           echo "Workflow completed">>$GITHUB_STEP_SUMMARY
