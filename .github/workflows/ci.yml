@@ -18,7 +18,7 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-    - run: echo "Version received is ${{needs.build.outputs.version}}"
+    - run: echo "Version received is ${{needs.hello.outputs.version}}"
 
         
 
