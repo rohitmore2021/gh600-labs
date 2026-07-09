@@ -1,0 +1,17 @@
+name: MATRIXCHECK
+on: push
+
+jobs: 
+   build-matrix:
+    strategy:
+      matrix:
+        os:
+          - ubuntu-latest
+          - windows-latest
+    runs-on: ${{matrix.os}}
+    steps:
+      - run: echo "Running on OS ${{matrix.os}}">>$GITHUB_STEP_SUMMARY
+
+
+      
+
