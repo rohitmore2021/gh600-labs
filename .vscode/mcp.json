@@ -1,0 +1,12 @@
+{
+    "servers":{
+        "mcp-check": {
+            "command": "npx",
+            "args": ["-y","@modelcontextprotocol/server-github"]
+        },
+        "jira":{
+            "url": "https://mcp.example.com/jira",
+            "type": "http"
+        }
+    }
+}

@@ -1,5 +1,11 @@
 ---
 name: reviewer
+target: pull_request
+user-invocable: true
+model: GPT-4.1
+mcp-servers: 
+    - github
+    - jira
 description: Reviews pull requests for bugs, security issues, code quality, and maintainability.
 tools:
   - read
